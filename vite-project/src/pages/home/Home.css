@@ -1,0 +1,69 @@
+:root { scroll-behavior: smooth; }
+
+body{
+    background: #cecdcf;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 200vh;
+}
+
+.portada {
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .desktop-image {
+    display: block;
+  }
+  
+  .mobile-image {
+    display: none;
+  }
+  .stt:hover {
+    opacity: 0.8;
+  }
+  .stt:focus {
+    opacity: 0.9;
+  }
+  .stt:active {
+    opacity: 1;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    :root { scroll-behavior: smooth; }
+
+
+    body{
+      background: #cecdcf;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+  }
+    .portada {
+      width: 100%;
+      margin-left: -600px;
+      margin-top: -120px;
+    }
+  
+    .desktop-image {
+      display: none;
+    }
+    .quitar{
+      height: 10vh;
+    }
+  
+    .mobile-image {
+      position:relative ;
+      display: block;
+      width: 200%;
+      margin-left: 430px;
+      object-fit: fill;
+      overflow: hidden; 
+      clip-path: inset(0 400px 0 0px); 
+}
+
+    }
+  
+  
