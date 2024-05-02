@@ -1,0 +1,18 @@
+.cookie-policy {
+    color:white ;
+    border: 4px solid #ff0000;
+    padding: 20px;
+    background-color: #000000;
+    margin: auto;
+    width: 70%;
+    text-align: justify;
+}
+
+.cookie-policy h2 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.cookie-policy h3 {
+    font-size: 1.2em;
+}

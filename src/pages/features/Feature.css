@@ -1,0 +1,471 @@
+
+.feature-body{
+    background: #cecdcf;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90em;
+}
+
+
+
+.container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 3000px;
+    height: 250px;
+}
+
+.container .card {
+    position: relative;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    width: 310px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #dcbb28; */
+    clip-path: circle(150px at 80% 20%);
+    transition: 0, 3s ease-in-out;
+}
+
+.orange-b-gradient::before {
+    background: rgb(245, 156, 0, 1);
+    background: radial-gradient(circle, rgb(245, 156, 0, 1) 40%, rgba(0, 0, 0) 100%);
+}
+
+.pink-gradient::before {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.blue-gradient::before {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(57, 133, 139, 1) 100%);
+}
+
+.orange-gradient::before {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(245, 156, 0, 1) 100%);
+}
+
+.black-gradient::before {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.white-gradient::before {
+    background: rgb(228, 227, 227);
+    background: radial-gradient(circle, rgba(228, 227, 227, 1) 0%, rgba(166, 151, 124, 1) 100%);
+}
+
+.green-gradient::before {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(81, 255, 116, 1) 100%);
+}
+
+.container .card:hover::before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+
+.container .card::after {
+    content: 'Nike';
+    position: absolute;
+    top: 35%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: 'Poppins';
+    color: rgba(255, 255, 255, 0.04);
+}
+
+.container .card .imgBx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    width: 100%;
+    height: 220px;
+    transition: 0.3s;
+}
+
+.container .card:hover .imgBx {
+    top: 0%;
+    transform: translateY(0%);
+}
+
+.container .card .imgBx img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    width: 320px;
+}
+
+.container .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 0, 9s;
+    z-index: 101;
+}
+
+.container .card:hover .contentBx {
+    height: 210px;
+}
+
+.container .card .contentBx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.container .card .contentBx .size,
+.container .card .contentBx .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0, 3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .card:hover .contentBx .size {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.4s;
+}
+
+.container .card:hover .contentBx .color {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.container .card .contentBx .size h3,
+.container .card .contentBx .color {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container .card .contentBx .size span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0, 4s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container .card .contentBx .size span:hover {
+    background: #dcbb28;
+}
+
+.container .card .contentBx .color span {
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.container .card .contentBx .color span:nth-child(2) {
+    background: #dcbb28;
+}
+
+.container .card .contentBx .color span:nth-child(3) {
+    background: #3098d4;
+}
+
+.container .card .contentBx .color span:nth-child(4) {
+    background: #ff0000;
+}
+
+.container .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.3s;
+}
+
+.container .card:hover .contentBx a {
+    opacity: 1;
+    transform: translateY(10px);
+    transition-delay: 0.5s;
+}
+
+.container .card:hover .contentBx a:hover {
+    background: #dcbb28;
+}
+
+@media only screen and (max-width: 700px) {
+    .feature-body{
+        background: #cecdcf;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 90em;
+    }
+
+
+
+    .container {
+        top: 350px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 3000px;
+    }
+
+    .container .card {
+        position: relative;
+        margin: 20px auto;
+        width: 340px;
+        height: 450px;
+        background: #232323;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .container .card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background: #dcbb28; */
+        clip-path: circle(150px at 80% 20%);
+        transition: 0, 3s ease-in-out;
+    }
+
+    .orange-b-gradient::before {
+        background: rgb(245, 156, 0, 1);
+        background: radial-gradient(circle, rgb(245, 156, 0, 1) 40%, rgba(0, 0, 0) 100%);
+    }
+
+    .pink-gradient::before {
+        background: rgb(238, 174, 202);
+        background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    }
+
+    .blue-gradient::before {
+        background: rgb(255, 255, 255);
+        background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(57, 133, 139, 1) 100%);
+    }
+
+    .orange-gradient::before {
+        background: rgb(255, 255, 255);
+        background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(245, 156, 0, 1) 100%);
+    }
+
+    .black-gradient::before {
+        background: rgb(255, 255, 255);
+        background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    }
+
+    .white-gradient::before {
+        background: rgb(228, 227, 227);
+        background: radial-gradient(circle, rgba(228, 227, 227, 1) 0%, rgba(166, 151, 124, 1) 100%);
+    }
+
+    .green-gradient::before {
+        background: rgb(255, 255, 255);
+        background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(81, 255, 116, 1) 100%);
+    }
+
+    .container .card:hover::before {
+        clip-path: circle(300px at 80% -20%);
+    }
+
+
+    .container .card::after {
+        content: 'Nike';
+        position: absolute;
+        top: 30%;
+        left: -20%;
+        font-size: 12em;
+        font-weight: 800;
+        font-style: 'Poppins';
+        color: rgba(255, 255, 255, 0.04);
+    }
+
+    .container .card .imgBx {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100;
+        width: 100%;
+        height: 220px;
+        transition: 0.3s;
+    }
+
+    .container .card:hover .imgBx {
+        top: 0%;
+        transform: translateY(0%);
+    }
+
+    .container .card .imgBx img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-25deg);
+        width: 320px;
+    }
+
+    .container .card .contentBx {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        transition: 0, 9s;
+        z-index: 101;
+    }
+
+    .container .card:hover .contentBx {
+        height: 210px;
+    }
+
+    .container .card .contentBx h2 {
+        position: relative;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #fff;
+    }
+
+    .container .card .contentBx .size,
+    .container .card .contentBx .color {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 20px;
+        transition: 0, 3s;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .container .card:hover .contentBx .size {
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0.4s;
+    }
+
+    .container .card:hover .contentBx .color {
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0.5s;
+    }
+
+    .container .card .contentBx .size h3,
+    .container .card .contentBx .color {
+        color: #fff;
+        font-weight: 300;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .container .card .contentBx .size span {
+        width: 26px;
+        height: 26px;
+        text-align: center;
+        line-height: 26px;
+        font-size: 14px;
+        display: inline-block;
+        color: #111;
+        background: #fff;
+        margin: 0 5px;
+        transition: 0, 4s;
+        color: #111;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .container .card .contentBx .size span:hover {
+        background: #dcbb28;
+    }
+
+    .container .card .contentBx .color span {
+        width: 20px;
+        height: 20px;
+        background: #000;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .container .card .contentBx .color span:nth-child(2) {
+        background: #dcbb28;
+    }
+
+    .container .card .contentBx .color span:nth-child(3) {
+        background: #3098d4;
+    }
+
+    .container .card .contentBx .color span:nth-child(4) {
+        background: #ff0000;
+    }
+
+    .container .card .contentBx a {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 10px;
+        text-decoration: none;
+        font-weight: 600;
+        color: #111;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.3s;
+    }
+
+    .container .card:hover .contentBx a {
+        opacity: 1;
+        transform: translateY(10px);
+        transition-delay: 0.5s;
+    }
+
+    .container .card:hover .contentBx a:hover {
+        background: #dcbb28;
+    }
+}

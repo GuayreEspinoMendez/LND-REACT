@@ -1,0 +1,191 @@
+/* Header.css */
+@font-face {
+    src: url("./popins.ttf");
+    font-family: "Poppins";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins";
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background: #e7e6e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.logo {
+    cursor: pointer;
+    width: 200px;
+    margin-top: 8px;
+    margin-left: -70px;
+}
+
+nav .logo {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    color: #212526;
+    display: block;
+    margin: 0 2px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: 0.2s;
+    border-radius: 30px;
+}
+
+nav ul li img {
+    width: 30px;
+    margin-top: -5px;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+nav ul li img:hover {
+    filter: invert();
+}
+
+nav ul li a:hover {
+    background: #1a1e2c;
+    color: #fefefe;
+}
+
+nav ul li a.active {
+    background: #1a1e2c;
+    color: #fefefe;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 22px;
+    margin: 20px;
+    position: absolute;
+    top:20px;
+    right: 20px;
+    z-index: 100000;
+}
+
+.hamburger span {
+    display: block;
+    background: #333;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    top: 10px;
+}
+
+.hamburger span:nth-child(3) {
+    top: 20px;
+}
+
+#nav_check:checked ~ .hamburger span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 10px;
+}
+
+#nav_check:checked ~ .hamburger span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+#nav_check:checked ~ .hamburger span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    header {
+        height: auto;
+    }
+
+    .logo {
+        width: 0px;
+        margin-top: 8px;
+        margin-left: -50px;
+    }
+
+    #nav_check:checked ~ nav {
+        left: 0;
+    }
+
+    nav {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        width: 180px;
+        height: 67vh;
+        background-color: #e7e6e5;
+        transition: 0.2s;
+        box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    nav .logo {
+        display: block;
+        width: 150px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    nav ul li a {
+        margin-bottom: 5px;
+        padding: 10px 1;
+        border-radius: 5px;
+    }
+
+    nav ul {
+        display: block;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+
+    nav ul li img {
+        width: 30px;
+        margin-top: -8px;
+        margin-left: -5px;
+        border-radius: 30px;
+        transition: 0.2s;
+    }
+
+    nav ul li img:hover {
+        filter: invert();
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

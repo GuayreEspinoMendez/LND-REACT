@@ -1,0 +1,85 @@
+.refound-body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #cecdcf;
+}
+
+.refound-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 20px;
+}
+
+.refound-form-container {
+  height: 350px;
+  margin-top: 100px;
+  background-color: #212526;
+  border-radius: 9px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; 
+  padding: 20px;
+  width: 50%; 
+  align-self: center; 
+}
+
+.refound-table-container {
+  border-radius: 8px;
+  width: 30%; 
+  margin-top: 0px; 
+}
+
+.refound-input, .refound-button {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #000000;
+  width: calc(100% - 22px);
+}
+
+.refound-button {
+  background-color: #323435;
+  color: white;
+  cursor: pointer;
+}
+
+.refound-button:hover {
+  background-color: #b3b0b0;
+  color: black;
+}
+
+.refound-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.refound-th, .refound-td {
+  text-align: left;
+  padding: 8px;
+}
+
+.refound-tr{
+  border-radius: 20px;
+  background-color: #f3f1f1;
+  color: #000000;
+}
+
+.refound-tr:nth-child(even) {
+  background-color: #323435;
+  color: #FFFF;
+}
+
+.refound-th {
+  background-color: #212526;
+  color: white;
+}
+
+.edit-btn, .delete-btn {
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
