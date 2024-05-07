@@ -12,7 +12,7 @@ function Header() {
     <header>
       <div className="logo">
         <img src="/images/descarga.png" alt="logo"/>
-      </div>
+      </div>  
       <div onClick={toggleMenu} className="hamburger">
         <span></span>
         <span></span>
