@@ -4,7 +4,7 @@
     background: #cecdcf;
     align-items: center;
     justify-content: center;
-    width: 119rem;
+    width: 100%;
     height: 100%;
     box-sizing: border-box;
     margin: 0;
@@ -12,7 +12,8 @@
 }
 
 .Carrousel{
-  width: 100%;
+  max-width: 119rem;
+  width: 80%;
   align-items: center;
   justify-content: center;
   margin-left: 15%;
@@ -23,7 +24,8 @@
     margin-top: 0px;
   }
   .desktop-image {
-    width: 119rem;
+    position: relative;
+    max-width: 100%;
   }
   
   .mobile-image {

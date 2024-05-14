@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+    <channel>
+        <title>Xike - Noticias y Descuentos</title>
+        <link>https://Xike.com</link>
+        <description>Últimas noticias y descuentos en zapatillas de Xike.</description>
+        <language>es-ES</language>
+    
+        <item>
+          <title>¡Nuevo modelo de zapatillas Xike lanzado!</title>
+          <link>https://Xike.com/Feature/nuevoModelo</link>
+          <description>Descubre nuestro último modelo de zapatillas, diseñado para mayor comodidad y estilo.</description>
+          <pubDate>Fri, 14 May 2024 12:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+          <title>¡Descuento especial por tiempo limitado!</title>
+          <link>https://Xike.com/Discount</link>
+          <description>Aprovecha nuestro descuento del 20% en todos los modelos de zapatillas. ¡No te lo pierdas!</description>
+          <pubDate>Thu, 13 May 2024 09:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Que buenas zapatillas estan saliendo de la fabrica! de ¿Xike??</title>
+            <link>https://Xike.com</link>
+            <description>Estamos en la revista Forbes como mejor marca de zapatilla por ventas y calidad ¡¡SIIIII!!</description>
+            <pubDate>Thu, 16 May 2024 23:30:12 GMT</pubDate>
+          </item>
+    
+      </channel>
+
+</rss>

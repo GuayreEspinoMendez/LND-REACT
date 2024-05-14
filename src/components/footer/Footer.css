@@ -5,7 +5,7 @@
 
 footer {
     width: 100%;
-    position: sticky;
+    position:relative;
     margin-bottom: 0;
     left: 0;
     padding:  1%;
@@ -14,6 +14,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 10000;
 }
 
 .logo2 {
@@ -38,7 +39,9 @@ footer {
     background-repeat: no-repeat;
     margin: 1rem;
 }
-
+.imgs{
+    
+}
 .social-icon:hover{
     background-color: #121212;
     filter: invert(1);
@@ -78,8 +81,7 @@ a {
 @media only screen and (max-width: 700px) {
     footer {
         width: 100%;
-        height: end;
-        position: relative;
+        position: absolute;
         margin-bottom: 0;
         left: 0;
         padding:  1%;
@@ -88,6 +90,7 @@ a {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        z-index: 1000;
     }
     
     .logo2 {

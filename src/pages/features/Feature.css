@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 90em;
+    height: 120em;
 }
 
 
@@ -241,13 +241,13 @@
         align-items: center;
         justify-content: center;
         width: 100vw;
-        height: 90em;
+        height: 220em;
     }
 
 
 
     .container {
-        top: 350px;
+        top: 20px;
         display: flex;
         position: relative;
         align-items: center;

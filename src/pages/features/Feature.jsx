@@ -25,7 +25,6 @@ function Feature() {
         </div>
     </body>
     <ScrollToTopButton></ScrollToTopButton>
-    <div class="quitar"></div>
     <Footer/>
     </>
   )

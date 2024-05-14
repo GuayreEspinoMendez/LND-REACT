@@ -26,7 +26,7 @@ const styles = {
     border: 'none',
     borderRadius: '5px',
     cursor: 'pointer',
-    zIndex: 1000 
+    zIndex: 100000 
   };
   
 

@@ -1,10 +1,14 @@
 
+
+
 .image-container {
-    max-width: 1200px;
-    width: 95%;
+    position: relative;
+    max-width: 119rem;
+    width: 100%;
   }
   .slider-wrapper {
     position: relative;
+    width: 80%;
   }
   .slider-wrapper .slide-button {
     position: absolute;
@@ -54,7 +58,7 @@
   }
   .image-container .slider-scrollbar {
     height: 24px;
-    width: 100%;
+    width: 60%;
     display: flex;
     align-items: center;
   }
